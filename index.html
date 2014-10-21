@@ -3,7 +3,7 @@
 <html class="no-js ie8 oldie" lang="en"> 
 <![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="en" xmlns:wb="http://open.weibo.com/wb">
+<html lang="en" >
 <!--<![endif]-->
 <head>
 
@@ -24,7 +24,7 @@
     
 </head>
 
-
+<body>
 
   <div id="container" class="clearfix">
   
@@ -40,8 +40,9 @@
        
             <div class="fengmian">
                         
-        
-                <img src="./img/10.png" id="img10" width="472" height="756">
+                <div class="imgdiv">
+                <img src="img/10.png" id="img10" width="472" height="756">
+                </div>
 
                 <div id="imgback">
                     <img src="img/bg.jpg">
@@ -68,9 +69,14 @@
 
             <div id="overlay"></div>
 
-            <img data-original="img/page2/font.png" width="497" height="257" class="lazy" id="page2font">
+            <img data-original="img/page2/font.png" width="497" height="257" class="lazy1" id="page2font">
+        <div class="abs video-box" >
+                    <video poster="img/page2/video.jpg" controls="controls" width="535" height="285" class="video-play" ontouchmove="event.preventDefault()">
+                      <source src="img/zhao.mov">
+                    </video>
 
-            <img id="popvideo" src="img/page2/video.jpg">
+                </div>
+           <!--  <img id="popvideo" src="img/page2/video.jpg">
             
             <div class="popup-detail">
                 <img src="img/page2/close.jpg" class="videoclose">
@@ -79,11 +85,9 @@
                     </video>
 
                 </div>
-            </div>
+            </div> -->
             <div class="share-button"></div>
-            <div class="weibo-share">
 
-            </div>
             <script type="text/javascript" src="js/share.js"> </script>
           
 
@@ -91,7 +95,7 @@
         
        <!--Third Slide-->
         <div class="swiper-slide thirdpage otherpage pagebackground">
-             <img data-original="img/page3/font.png" class="page3font lazy" >
+             <img data-original="img/page3/font.png" class="page3font lazy1" >
 
         </div>
         <!--4 Slide-->
@@ -179,7 +183,7 @@
 <script src="js/Load_Page_Top.js"></script>
 <script src="js/idangerous.swiper.min.js"></script>
 <script src="js/base.js"></script>
-<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+
 
  <!-- 滑动分屏插件 -->
 <script>
@@ -197,12 +201,16 @@
         $("img.lazy").lazyload({
             event : "sporty"
         });
+        $("img.lazy1").lazyload({
+            event : "sporty"
+        });
          $("div.lazy").lazyload({
             event : "sporty"
         });
     });
 
     $(window).bind("load", function() {
+       var timeout = setTimeout(function() { $("img.lazy1").trigger("sporty") }, 3000);
         var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 7000);
          var timeout = setTimeout(function() { $("div.lazy").trigger("sporty") }, 7000);
     });      

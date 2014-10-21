@@ -10,12 +10,18 @@ $(document).ready(function(){
 });
 
 function AnimateAdmin(){
-	Img10();
+	ImgBack();
+}
+
+function ImgBack(){
+  //$("#imgback").fadeIn(400,fontdis);
+  $("#imgback").fadeIn(1000,Img10);
+  
 }
 
 
 function Img10(){
-	//$("#img10").animate({marginTop:'300px'},300);
+
 	var position = $("#img10").position();
 	$("#img10").css({position:'absolute',top:position.top,
                     left:position.left})
@@ -24,10 +30,10 @@ function Img10(){
                   //opacity: 'hide',
                   width: $("#img10").width() * 1.5,
                   height: $("#img10").height() * 1.5,
-                  top: position.top - ($("#img10").height() * 1 / 2),
-                  left: position.left - ($("#img10").width() * 0.8 / 2)
+                  top: position.top - ($("#img10").height() * 0.8 / 2),
+                  left: position.left - ($("#img10").width() * 0.6 / 2)
                 },
-                2000);
+                1500);
               	//400);
 
     	$("#img10").css({position:'absolute',top:position.top,
@@ -35,16 +41,16 @@ function Img10(){
               .animate(
                 {
                   //opacity: 'hide',
-                  width: $("#img10").width() *1,
-                  height: $("#img10").height() * 1,
-                  top: position.top - ($("#img10").height() * 0.5 / 2),
-                  left: position.left - ($("#img10").width() * 0.2 / 2)
+                  width: $("#img10").width() *1.07,
+                  height: $("#img10").height() * 1.05,
+                  top: position.top - ($("#img10").height() * 0.3 / 2),
+                  left: position.left - ($("#img10").width() * 0.1 / 2)
                 },
                 200,TiaoFu);
 
   $(".otherpage").css({opacity:'1'});
 
-	//$("#img10").animate({marginTop:'+=3px'},100,"easeInOutElastic");
+
 
 }
 
@@ -53,7 +59,7 @@ function TiaoFu(){
       
 	$("#imgheng").fadeIn(1,function()
 		{
-			$("#imgheng").animate({marginLeft:'0px',width:'640px'},2000,ImgTitle);
+			$("#imgheng").animate({marginLeft:'0px',width:'640px'},1500,ImgTitle);
 			//$("#imgheng").animate({marginLeft:'0px',width:'832px'},200,imgtitle);
 		}
 	);
@@ -74,7 +80,7 @@ function ImgTitle(){
                   top: position.top - ($("#imgtitle1").height() * 10 / 2),
                   left: position.left - ($("#imgtitle1").width() * 10 / 2)
                 },
-                1400,ImgBack);
+                1000,ImgSwiper);
           }
 		);
 }
@@ -90,11 +96,6 @@ function ImgSwiper(){
 }
 
 
-
-function ImgBack(){
-	//$("#imgback").fadeIn(400,fontdis);
-  $("#imgback").fadeIn(2500,ImgSwiper);
-}
 
 
 

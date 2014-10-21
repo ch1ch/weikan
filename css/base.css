@@ -2,16 +2,18 @@
 {
 	text-align: center;
 	left: 50%;
-	margin-left: -200px;
-	margin-top: 40%;
+	margin-left: -250px;
+	margin-top: 200px;
 	position:absolute;
+
 }
 
 #imgheng{
 	margin-top:210px;
 	margin-left: -400px;
-	width:1px;  display: none;
-	  position:absolute;
+	width:1px;  
+  display: none;
+	position:absolute;
 }
 
 #imgtitle1div{
@@ -24,7 +26,7 @@
 
 #imgswiper{
 	margin-top:874px;
-	margin-left: 233px;
+	margin-left: 243px;
 	display: none; 
 	 position:absolute;
 }
@@ -86,10 +88,6 @@
 }
 
 
-.weibo-share{
-	opacity: 0;
-	margin-top: 20%;
-}
 
 
 #overlay{
@@ -128,11 +126,13 @@
 
 .video-box{
 	
-	margin-left: -5%;
+	margin-left: -27px;
+  margin-top: 32px;
+
 
 }
 .video-play{
-	margin-top: 40%;
+	margin-top: 10px;
 }
 
 .thirdpage{
