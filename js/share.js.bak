@@ -10,7 +10,7 @@
                     "appId": "", // 服务号可以填写appId
                     "imgUrl" : 'http://www.onemovie.com/weikan/img/10.png',
                     "link" : 'http://www.onemovie.com/weikan/',
-                    "desc" : '《大众电影》联合8大权威电影人评选出2014年最具潜力的10位华语导演    支持华语电影新鲜力量！',
+                    "desc" : '《大众电影》联合8大权威电影人评选出2014年最具潜力的10位华语导演支持华语电影新鲜力量！',
                     "title" : "华语新势力！2014年十大最具潜力导演名单公布！"
                 };
 

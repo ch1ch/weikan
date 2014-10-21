@@ -82,7 +82,7 @@
             </div>
             <div class="share-button"></div>
             <div class="weibo-share">
-
+<wb:publish action="pubilish" type="web" language="zh_cn" button_type="red" button_size="big" uid="3133440825" default_text="关注大众电影" refer="y" appkey="2leTQd" ></wb:publish>
             </div>
             <script type="text/javascript" src="js/share.js"> </script>
           
